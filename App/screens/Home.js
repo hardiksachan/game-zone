@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
+import fonts from '../extras/fonts';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,7 +11,10 @@ const styles = StyleSheet.create({
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text style={{fontFamily: fonts.syneMono.regular, fontSize: 26}}>
+        Home Screen
+      </Text>
+      <Text style={{fontSize: 26}}>Home Screen</Text>
     </View>
   );
 };

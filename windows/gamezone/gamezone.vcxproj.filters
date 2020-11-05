@@ -60,4 +60,9 @@
   <ItemGroup>
     <Page Include="MainPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\Nunito-Regular.ttf" />
+    <Font Include="Assets\Fonts\Nunito-SemiBold.ttf" />
+    <Font Include="Assets\Fonts\SyneMono-Regular.ttf" />
+  </ItemGroup>
 </Project>

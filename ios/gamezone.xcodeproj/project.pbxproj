@@ -16,6 +16,9 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* gamezoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gamezoneTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BB55D81C112C4E32AE86BAA1 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F0FB5EA6C3946C7BBD2F08B /* Nunito-Regular.ttf */; };
+		44E85E84FD0C41AF97FBAFB5 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCF52924441E472C802D0F5D /* Nunito-SemiBold.ttf */; };
+		1C4DEF5B46C14BB0805D02F6 /* SyneMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CBDECF90FCE41D6938F9698 /* SyneMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = gamezone/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		6F0FB5EA6C3946C7BBD2F08B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; name = "Nunito-Regular.ttf"; path = "../assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCF52924441E472C802D0F5D /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6CBDECF90FCE41D6938F9698 /* SyneMono-Regular.ttf */ = {isa = PBXFileReference; name = "SyneMono-Regular.ttf"; path = "../assets/fonts/SyneMono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				00E356EF1AD99517003FC87E /* gamezoneTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				170B655273834537988C2AB3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +163,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		170B655273834537988C2AB3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				6F0FB5EA6C3946C7BBD2F08B /* Nunito-Regular.ttf */,
+				CCF52924441E472C802D0F5D /* Nunito-SemiBold.ttf */,
+				6CBDECF90FCE41D6938F9698 /* SyneMono-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -295,6 +313,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BB55D81C112C4E32AE86BAA1 /* Nunito-Regular.ttf in Resources */,
+				44E85E84FD0C41AF97FBAFB5 /* Nunito-SemiBold.ttf in Resources */,
+				1C4DEF5B46C14BB0805D02F6 /* SyneMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
