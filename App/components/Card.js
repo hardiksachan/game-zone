@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, ScrollView, View} from 'react-native';
 
 const styles = StyleSheet.create({
   card: {
@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
 const Card = (props) => {
   return (
     <View style={{...styles.card, ...props.style}}>
-      <View style={styles.cardContent}>{props.children}</View>
+      <View style={styles.cardContent}>
+        <ScrollView>{props.children}</ScrollView>
+      </View>
     </View>
   );
 };

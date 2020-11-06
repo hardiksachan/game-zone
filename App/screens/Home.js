@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, TouchableOpacity, FlatList, StyleSheet} from 'react-native';
 import {globalStyles} from '../styles/global';
 import {v4 as uuidv4} from 'uuid';
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Home = ({navigation}) => {
+const Home = ({navigation, route}) => {
   const [reviews, setReviews] = useState([
     {
       title: 'Zelda, Breath of Fresh Air',
@@ -37,6 +37,17 @@ const Home = ({navigation}) => {
       key: uuidv4(),
     },
   ]);
+
+  const addReview = (review) => {
+    review.key = uuidv4();
+    setReviews((currReviews) => [review, ...currReviews]);
+  };
+
+  useEffect(() => {
+    if (route.params?.newReview) {
+      addReview(route.params?.newReview);
+    }
+  }, [route.params?.newReview]);
 
   return (
     <View style={globalStyles.container}>
