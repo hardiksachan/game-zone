@@ -1,11 +1,12 @@
+import './imports/platformImports';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import HomeNavigator from './routes/homeStack';
+import RootDrawerNavigator from './routes/drawer';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <HomeNavigator />
+      <RootDrawerNavigator />
     </NavigationContainer>
   );
 };

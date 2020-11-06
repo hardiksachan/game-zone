@@ -1,7 +1,20 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, FlatList} from 'react-native';
+import {View, Text, TouchableOpacity, FlatList, StyleSheet} from 'react-native';
 import {globalStyles} from '../styles/global';
 import {v4 as uuidv4} from 'uuid';
+import Card from '../components/Card';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
+const styles = StyleSheet.create({
+  modalToggle: {
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#f2f2f2',
+    padding: 10,
+    borderRadius: 10,
+    alignSelf: 'center',
+  },
+});
 
 const Home = ({navigation}) => {
   const [reviews, setReviews] = useState([
@@ -27,17 +40,24 @@ const Home = ({navigation}) => {
 
   return (
     <View style={globalStyles.container}>
+      <MaterialIcons
+        style={styles.modalToggle}
+        onPress={() => navigation.navigate('NewReviewModal')}
+        name="add"
+        size={24}
+      />
       <FlatList
         data={reviews}
         renderItem={({item}) => (
           <TouchableOpacity
-            style={{padding: 20}}
             onPress={() =>
               navigation.navigate('ReviewDetails', {
                 item: item,
               })
             }>
-            <Text style={globalStyles.titleText}>{item.title}</Text>
+            <Card>
+              <Text style={globalStyles.titleText}>{item.title}</Text>
+            </Card>
           </TouchableOpacity>
         )}
       />
