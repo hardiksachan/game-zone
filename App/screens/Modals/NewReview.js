@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Button,
-  View,
-  TextInput,
-  Text,
-  ScrollView,
-} from 'react-native';
+import {StyleSheet, Button, View, Text} from 'react-native';
+import {TextInput} from 'react-native-paper';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Card from '../../components/Card';
 import ModalContainer from '../../components/ModalContainer';
@@ -81,6 +75,7 @@ const NewReview = ({navigation}) => {
                 onChangeText={handleChange('title')}
                 onBlur={handleBlur('title')}
                 value={values.title}
+                label="Review Title"
               />
               <Text style={globalStyles.errorText}>
                 {touched.title && errors.title}
@@ -91,6 +86,7 @@ const NewReview = ({navigation}) => {
                 onChangeText={handleChange('body')}
                 onBlur={handleBlur('body')}
                 value={values.body}
+                label="Review Body"
                 multiline
               />
               <Text style={globalStyles.errorText}>
@@ -103,6 +99,7 @@ const NewReview = ({navigation}) => {
                 onBlur={handleBlur('rating')}
                 value={values.rating}
                 keyboardType="numeric"
+                label="Rating"
               />
               <Text style={globalStyles.errorText}>
                 {touched.rating && errors.rating}
